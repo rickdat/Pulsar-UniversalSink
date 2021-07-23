@@ -13,8 +13,7 @@ dse_token = response_dict.get("authToken")
 #DSE insert
 insert_headers = {'X-Cassandra-Token': dse_token,'Content-type': 'application/json'}
 
-msjdata = String()
-
+msjdata = str()
 
 #Class
 class TableSchema(Record):
