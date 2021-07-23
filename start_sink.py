@@ -1,5 +1,4 @@
 import pulsar, time
-from pulsar.schema import *
 import json
 import requests
 from schema import TableSchema
