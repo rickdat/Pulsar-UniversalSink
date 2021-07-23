@@ -5,16 +5,7 @@ Consumes from a Pulsar Topic and inserts into a destination C* table using Start
 The Auth.py file should be modified to inlcude endpoints information.
 The Schema.py file should be modified to specify the structure of the table.
 
-# Run it with Docker
-1. Go to files directory: 
-`cd <directory>`
 
-2. Build the docker image
-`docker build -t universalsink .`
-
-2. Run Your Image
-`docker run universalsink`
-
-# Run without docker
+# Run with Python
 Clone this repo, install Python 3.7+ and install run the following commands
 `pip install pulsar`
