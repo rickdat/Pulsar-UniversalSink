@@ -10,10 +10,10 @@ The Schema.py file should be modified to specify the structure of the table.
 `cd <directory>`
 
 2. Build the docker image
-docker build -t universalsink .
+`docker build -t universalsink .`
 
 2. Run Your Image
-docker run universalsink
+`docker run universalsink`
 
 # Run without docker
 Clone this repo, install Python 3.7+ and install run the following commands
