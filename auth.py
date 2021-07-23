@@ -1,5 +1,3 @@
-from pulsar.schema import *
-
 #Pulsar Auth Debian/Ubuntu:
 service_url = 'pulsar+ssl://pulsar-gcp-useast4.streaming.datastax.com:6651'
 trust_certs = '/etc/ssl/certs/ca-certificates.crt'
