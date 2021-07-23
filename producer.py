@@ -1,5 +1,4 @@
 import pulsar, time
-from pulsar.schema import *
 import argparse
 import sys,os
 import json
