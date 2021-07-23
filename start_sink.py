@@ -2,6 +2,7 @@ import pulsar, time
 import json
 import requests
 import auth
+import sys,os
 
 
 #DSE Auth
