@@ -1,8 +1,9 @@
 import pulsar, time
+from pulsar.schema import *
 import json
 import requests
+from schema import TableSchema
 import auth
-import sys,os
 
 
 #DSE Auth
@@ -13,27 +14,7 @@ dse_token = response_dict.get("authToken")
 #DSE insert
 insert_headers = {'X-Cassandra-Token': dse_token,'Content-type': 'application/json'}
 
-msjdata = str()
-
-#Class
-class TableSchema(Record):
-    voter_uuid = String() 
-    face_photo_1 = String()
-    face_photo_2 = String()
-    face_photo_3 = String()
-    fingerprint_left_pinky = String()
-    fingerprint_left_ring = String()
-    fingerprint_left_middle = String()
-    fingerprint_left_index = String()
-    fingerprint_left_thumb = String()
-    fingerprint_right_thumb = String()
-    fingerprint_right_index = String()
-    fingerprint_right_middle = String()
-    fingerprint_right_ring = String()
-    fingerprint_right_pinky = String()
-    signature = String()
-    updated_ts = String()
-
+msjdata = String()
 
 
 
